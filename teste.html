@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste Kassel Lab</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/kassel.js"> </script>
 </head>
 <body>
-    <script src="js/kassel.js"> </script>
+
+    <header>
+        <h1>Produtora de Videos</h1>
+    </header>
+
+    <main>
+
+        <div class="title">
+            <h2>Videos</h2>
+            <span>Lista de Videos da Produtora</span> 
+        </div>
+
+        <div  class="card"> 
+
+            <div class="lineInput">
+                <label>Cliente</label>
+                <input type="text" id="cliente" placeholder="Nome do Cliente">
+            </div>
+
+            <div class="lineInput">
+                <label>CNPJ</label>
+                <input type="text" id="cnpj" placeholder="CNPJ do Cliente">
+            </div>
+
+            <div class="lineInput">
+                <label>Telefone de Contato</label>
+                <input type="text" id="telefone" placeholder="Telefone do Cliente">
+            </div>
+
+            <div class="lineInput">
+                <label>Email</label>
+                <input type="text" id="email" placeholder="Email do Cliente">
+            </div>
+
+
+        <button onclick="cliente.salvar()" >Salvar</button>
+        <button onclick="cliente.cancelar()" >Cancelar</button>
+    </div>
+
+    <div class="content"> 
+        <table border="1">
+            <thead>
+                <th class="center">CNPJ</th>
+                <th>Nome do Cliente</th>
+                <th>Telefone de contato</th>
+                <th>E-mail</th>
+                <th class="center">Ações</th>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+</main>
+    
 </body>
 </html>
